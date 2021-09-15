@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Segoe UI, sans-serif;
+}
+
+.header {
+  padding-inline: calc(1rem + 12vw);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+
+.header__menu {
+  display: flex;
+  list-style: none;
+}
+
+.header__menu li {
+  margin-inline: 13px;
+}
+
+.header__menu a {
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+}
+
+.header__menu a:hover {
+  color: #4f82be;
+  transition: color 0.2s;
+}
+
+.title {
+  height: 75px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: url(https://nchbrasil.com.br/wp-content/uploads/home-nch.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  filter: brightness(0.5);
+}
+
+.title h1 {
+  z-index: 1;
+  color: #fff;
+  margin-left: calc(2rem + 20vw);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.fund-name {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.chart__wrapper {
+  margin-top: 2rem;
+  margin-inline: auto;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow-previous {
+  transform: rotate(180deg);
+  margin-right: 2rem;
+}
+
+.arrow-next {
+  margin-left: 2rem;
+}
+
+.arrow-hidden {
+  visibility: hidden;
+}
+
+.arrow-btn:hover {
+  cursor: pointer;
+}
+
+.owl-carousel {
+  overflow: hidden;
+}
+
+#chart5 div {
+  margin-inline: auto;
+}
+
+.general-info {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin-inline: auto;
+  margin-top: 3rem;
+}
+
+.info-item:not(:last-child) {
+  border-right: 1px dashed gray;
+}
+
+.general-info-header {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.info-item {
+  display: flex;
+  padding-inline: 4rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-item-value {
+  text-align: center;
+  font-size: calc(0.5rem + 1.5vw);
+}
+
+.info-item-name {
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1080px) {
+  .header {
+    padding-inline: 0;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .chart__wrapper {
+    width: 85%;
+  }
+}
