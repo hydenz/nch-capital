@@ -2,17 +2,17 @@ const path = require('path');
 
 module.exports = {
   entry: [
-    './carousel.js',
-    './data.js',
-    './locale.js',
-    './chart1.js',
-    './chart2.js',
-    './chart3.js',
-    './chart4.js',
-    './chart5.js',
+    './src/carousel.js',
+    './src/data.js',
+    './src/locale.js',
+    './src/chart1.js',
+    './src/chart2.js',
+    './src/chart3.js',
+    './src/chart4.js',
+    './src/chart5.js',
   ],
   output: {
-    filename: 'script.js',
+    filename: 'index.prod.js',
     path: path.resolve(__dirname, 'dist'),
   },
 };

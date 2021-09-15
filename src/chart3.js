@@ -1,14 +1,14 @@
-import { drawdownFia, drawdownIbov } from './data';
+import { drawdowns } from './data';
 
 const optionsChart3 = {
   series: [
     {
       name: 'DrawDown FIA',
-      data: drawdownFia,
+      data: drawdowns.fia,
     },
     {
       name: 'DrawDown Ibovespa',
-      data: drawdownIbov,
+      data: drawdowns.ibov,
     },
   ],
   title: {

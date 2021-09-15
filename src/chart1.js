@@ -1,14 +1,14 @@
-import { ibrx, fundo } from './data';
+import { profit } from './data';
 
 const optionsChart1 = {
   series: [
     {
       name: 'IBX100',
-      data: ibrx,
+      data: profit.ibx,
     },
     {
       name: 'NCH Maracanã FIA',
-      data: fundo,
+      data: profit.fia,
     },
   ],
   chart: {

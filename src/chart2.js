@@ -9,9 +9,6 @@ const optionsChart2 = {
     {
       breakpoint: 1600,
       options: {
-        // chart: {
-        //   // height: 350,
-        // },
         legend: {
           floating: false,
           offsetX: 0,
