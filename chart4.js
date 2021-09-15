@@ -5,7 +5,7 @@ var optionsChart4 = {
       data: [[25, 150]],
     },
     {
-      name: 'Fundo',
+      name: 'NCH Maracanã FIA',
       data: [[14, 139]],
     },
     {
